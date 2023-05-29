@@ -3,7 +3,7 @@ spring:
     banner-mode: off
 
 sentry:
-  dsn: https://4b1f7d5c5bbb4f6d97f7fa1e9b011235@o1348527.ingest.sentry.io/4505018308493312
+  dsn:
   traces-sample-rate: 1.0
   environment: local
   send-default-pii: on
