@@ -1,0 +1,20 @@
+spring:
+  main:
+    banner-mode: off
+
+sentry:
+  dsn: https://4b1f7d5c5bbb4f6d97f7fa1e9b011235@o1348527.ingest.sentry.io/4505018308493312
+  traces-sample-rate: 1.0
+  environment: local
+  send-default-pii: on
+  enable-user-interaction-tracing: on
+  enable-user-interaction-breadcrumbs: on
+  ignored-exceptions-for-type:
+#    - org.springframework.security.access.AccessDeniedException
+
+spring.datasource:
+  driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+  url: jdbc:p6spy:postgresql://localhost:5432/db
+
+holiday:
+  api: http://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService
